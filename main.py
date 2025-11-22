@@ -3,7 +3,7 @@
 
 from auth import login
 from admin import admin_menu
-# from inventory import inventory_menu
+from inventory import menu_inventory
 # from kasir import kasir_menu, sales_history
 
 def main():
@@ -19,8 +19,8 @@ def main():
 
         if role == "admin":
             admin_menu()
-        # elif role == "inventory":
-        #     # inventory_menu()
+        elif role == "inventory":
+            menu_inventory()
         # elif role == "kasir":
         #     # kasir_menu()
         # else:
