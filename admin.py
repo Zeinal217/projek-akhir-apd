@@ -55,11 +55,18 @@ def crud_user():
 
 def lihat_user():
     print("\n=== DAFTAR USER ===")
+
+    if not USERS:
+        print("Belum ada user yang terdaftar.\n")
+        return
+
     table = PrettyTable(["Username", "Role"])
     for u, info in USERS.items():
         table.add_row([u, info['role']])
+
     print(table)
     print()
+
 
 
 def tambah_user():
