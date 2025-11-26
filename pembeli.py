@@ -173,7 +173,7 @@ def checkout():
     keranjang.clear()
 
 # MENU UTAMA
-def menu_utama():
+def menu_pembeli():
     while True:
         print(" MENU UTAMA ")
         print("1. Lihat barang")
