@@ -10,7 +10,6 @@ def admin_menu():
                 choices=[
                     ("CRUD User", "crud"),
                     ("Lihat stok barang", "stok"),
-                    ("Lihat data penjualan", "sales"),
                     ("Logout", "logout")
                 ]
             )
@@ -22,8 +21,6 @@ def admin_menu():
             crud_user()
         elif pilihan == "stok":
             print("\nData stok belum diintegrasikan.\n")
-        elif pilihan == "sales":
-            print("\nData penjualan belum diintegrasikan.\n")
         elif pilihan == "logout":
             break
 
